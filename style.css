@@ -1,0 +1,83 @@
+#messages {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: red;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+
+}
+
+#grid {
+    margin-top: 5rem;
+}
+
+div[id^='row'] {
+    display: flex;
+}
+
+div[id^='column'] {
+    background-color: #f5f3f3;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+div[id^='column']:hover {
+    background-color: red;
+}
+
+div[id^='column'] span {
+    vertical-align: sub;
+    user-select: none;
+}
+
+#buttons {
+    display: flex;
+
+}
+
+#buttons>* {
+    margin-top: 3rem;
+    display: block;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7rem;
+    cursor: pointer;
+    border: 0;
+    font-size: 1.2rem;
+    font-family: monospace;
+    border-radius: 0.6rem;
+    background-color: #aad7db;
+    letter-spacing: 0.05rem;
+}
+
+
+#run {
+    background-color: #40e764;
+}
+
+#run:hover {
+    background-color: #1c7930;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+}
+
+#reset {
+    background-color: #ff9e9e;
+}
+
+#reset:hover {
+    background-color: #ff0303;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+}
